@@ -9,9 +9,9 @@ public class Lesson1 {
         System.out.printf("2. Max number in the array: %d%n", findMaxNumber(a));
         System.out.printf("3. Average value of numbers in the array: %.3f%n", calculateAverageValue(a));
         System.out.println("4. Sort array Min -> Max");
-        System.out.println("Array before sorting\n");
+        System.out.println("Array before sorting:\n");
         printArray(a);
-        System.out.printf("Array after sorting\n");
+        System.out.printf("Array after sorting:\n");
         sortMinToMax(a);
         printArray(a);
         int number = 13;
