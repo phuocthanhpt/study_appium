@@ -4,17 +4,18 @@ public class Lesson1 {
 
     public static void main(String[] args) {
         int[] a = {55, 3, 445, 32, 2, 644, 77, 95, 555, 23, 65, 754, 24};
-        System.out.printf("Count odd numbers in the array: %d%n", countOddNumbers(a));
-        System.out.printf("Count even numbers in the array: %d%n", countEvenNumbers(a));
-        System.out.printf("Max number in the array: %d%n", findMaxNumber(a));
-        System.out.printf("Average value of numbers in the array: %.3f%n", calculateAverageValue(a));
+        System.out.printf("1-1. Count odd numbers in the array: %d%n", countOddNumbers(a));
+        System.out.printf("1-2. Count even numbers in the array: %d%n", countEvenNumbers(a));
+        System.out.printf("2. Max number in the array: %d%n", findMaxNumber(a));
+        System.out.printf("3. Average value of numbers in the array: %.3f%n", calculateAverageValue(a));
+        System.out.println("4. Sort array Min -> Max");
         System.out.println("Array before sorting\n");
         printArray(a);
         System.out.printf("Array after sorting\n");
         sortMinToMax(a);
         printArray(a);
         int number = 13;
-        System.out.printf("Factorial of %d: %d%n", number, factorial(number));
+        System.out.printf("5. Factorial of %d: %d%n", number, factorial(number));
     }
 
     /*
