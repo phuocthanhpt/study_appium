@@ -102,7 +102,7 @@ public class Lesson1 {
     }
 
     /*
-        Calculate factorial of a number
+        5. Calculate factorial of a number
      */
     public static long factorial(int n) {
         if (n > 0) {
