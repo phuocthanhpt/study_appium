@@ -1,4 +1,4 @@
-package lesson1_review_Java;
+package review_Java;
 
 public class Lesson1 {
 
