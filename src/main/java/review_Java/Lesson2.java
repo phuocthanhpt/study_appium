@@ -4,11 +4,11 @@ public class Lesson2 {
 
     public static void main(String[] args) {
 
-        // Exercise 1
+        // Exercise 1: Print * N rows in decreasing
         int rows = 9;
         printStar(rows);
 
-        // Exercise 2
+        // Exercise 2: Find indices
         int targetSum = 14;
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         findIndices(arr, targetSum);
@@ -24,13 +24,11 @@ public class Lesson2 {
             }
             System.out.println();
         }
-
+    }
 
     /*
         2. Find indices
      */
-    }
-
     private static void findIndices(int[] arr, int targetSum) {
         boolean hasMatched = false;
         for (int i = 0; i < arr.length; i++) {
