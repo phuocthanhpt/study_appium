@@ -1,21 +1,25 @@
 package review_Java.Lab8;
 
+import java.security.SecureRandom;
+
 public class Horse extends Animal {
+    int speed;
 
     public Horse(int maxSpeed) {
-        super(maxSpeed);
+        this.speed = new SecureRandom().nextInt(maxSpeed);
         System.out.println(this);
     }
 
-    @Override
-    protected String getAnimalName() {
-        return "Horse";
-    }
 
     @Override
     public String toString() {
-        return getAnimalName() + "{" +
+        return "Horse{" +
                 "speed=" + speed +
                 '}';
+    }
+
+    @Override
+    protected int speed() {
+        return speed;
     }
 }

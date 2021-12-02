@@ -6,9 +6,9 @@ public class AnimalRacingTest {
         Animal tiger = new Tiger(100);
         Animal dog = new Dog(60);
 
-        int horseSpeed = horse.getSpeed();
-        int tigerSpeed = tiger.getSpeed();
-        int dogSpeed = dog.getSpeed();
+        int horseSpeed = horse.speed();
+        int tigerSpeed = tiger.speed();
+        int dogSpeed = dog.speed();
 
         if (horseSpeed > tigerSpeed && horseSpeed > dogSpeed) {
             System.out.printf("*** Racing winner is Horse, with speed: %d", horseSpeed);
