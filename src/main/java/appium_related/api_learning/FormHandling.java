@@ -1,6 +1,6 @@
-package api_learning;
+package appium_related.api_learning;
 
-import driver.DriverFactory;
+import appium_related.driver.DriverFactory;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 

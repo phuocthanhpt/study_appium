@@ -1,6 +1,6 @@
-package api_learning;
+package appium_related.api_learning;
 
-import caps.MobileCapabilityTypeEx;
+import appium_related.caps.MobileCapabilityTypeEx;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;

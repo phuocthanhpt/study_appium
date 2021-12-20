@@ -1,4 +1,4 @@
-package caps;
+package appium_related.caps;
 
 import io.appium.java_client.remote.MobileCapabilityType;
 
