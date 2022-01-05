@@ -6,11 +6,13 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class SwipeToOpenNotification {
     public static void main(String[] args) throws InterruptedException {
@@ -48,6 +50,19 @@ public class SwipeToOpenNotification {
                 .perform();
 
         Thread.sleep(2000);
+        List<MobileElement> notificationElems = androidDriver.findElements(By.id("android:id/notification_main_column"));
+
+        if(notificationElems.isEmpty()){
+            throw new RuntimeException("Notification is empty");
+        }
+
+        // Functional Interface + Lambda expression
+        notificationElems.forEach(notificationElem -> {
+            String notificationTitle = notificationElem.findElement(By.id("android:id/title")).getText();
+            System.out.println(notificationTitle);
+        });
+
+        // Swipe up to close notification bar
         touchAction
                 .press(endPoint)
                 .waitAction(new WaitOptions().withDuration(Duration.ofSeconds(1)))
