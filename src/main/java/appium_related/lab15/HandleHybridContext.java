@@ -6,6 +6,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.lang3.StringUtils;
+import org.checkerframework.checker.nullness.compatqual.NullableDecl;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -69,7 +71,13 @@ public class HandleHybridContext implements AppContexts {
     }
 
     private static ExpectedCondition<Boolean> moreThanOneContext(AppiumDriver<MobileElement> appiumDriver) {
-        return driver -> appiumDriver.getContextHandles().size() > 1;
+        return new ExpectedCondition<Boolean>() {
+            @NullableDecl
+            @Override
+            public Boolean apply(WebDriver webDriver) {
+                return appiumDriver.getContextHandles().size() > 1;
+            }
+        };
     }
 
     public static class MenuItem {
