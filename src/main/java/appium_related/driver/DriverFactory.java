@@ -18,7 +18,8 @@ public class DriverFactory {
         AppiumServiceBuilder appiumServiceBuilder = new AppiumServiceBuilder();
         appiumServiceBuilder.withIPAddress("127.0.0.1").usingAnyFreePort();
 //        appiumServiceBuilder.withIPAddress("127.0.0.1").usingPort(4723);
-        appiumDriverLocalService = AppiumDriverLocalService.buildService(appiumServiceBuilder);
+        appiumDriverLocalService = AppiumDriverLocalService.buildService(appiumServiceBuilder
+                .withArgument(() -> "--allow-insecure","chromedriver_autodownload"));
         appiumDriverLocalService.start();
     }
 
