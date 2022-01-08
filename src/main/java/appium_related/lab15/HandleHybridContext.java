@@ -1,7 +1,7 @@
 package appium_related.lab15;
 
 import appium_related.driver.DriverFactory;
-import contexts.AppContexts;
+import appium_related.contexts.AppContexts;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;

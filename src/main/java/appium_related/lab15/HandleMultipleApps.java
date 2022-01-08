@@ -40,6 +40,7 @@ public class HandleMultipleApps {
             MobileElement wifiSwitchButtonElement = androidDriver.findElement(By.id("com.android.settings:id/switch_widget"));
             boolean isWifiOn = wifiSwitchButtonElement.getText().equals("ON");
             wifiSwitchButtonElement.click();
+
             if (isWifiOn) wifiSwitchButtonElement.click();
 
             androidDriver.activateApp("com.wdiodemoapp");
