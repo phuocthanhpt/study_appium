@@ -1,4 +1,4 @@
-package appium_related.lab16.testng;
+package appium_related.lab16;
 
 import appium_related.driver.DriverFactory;
 import appium_related.models.pages.LoginPage;
