@@ -5,6 +5,11 @@ public class LoginCredential {
     private String password;
     private Job job;
 
+    public LoginCredential(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     public String getUsername() {
         return username;
     }
