@@ -15,17 +15,18 @@ public class DriverFactoryEx {
 
     private AppiumDriver<MobileElement> appiumDriver;
 
-    public AppiumDriver<MobileElement> getAndroidDriver() {
-        initDriver();
+    public AppiumDriver<MobileElement> getAndroidDriver(String udid, String systemPort) {
+        initDriver(udid, systemPort);
         return appiumDriver;
     }
 
-    private void initDriver() {
+    private void initDriver(String udid, String systemPort) {
         try {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             desiredCapabilities.setCapability(MobileCapabilityTypeEx.PLATFORM_NAME, "android");
             desiredCapabilities.setCapability(MobileCapabilityTypeEx.AUTOMATION_NAME, "uiautomator2");
-            desiredCapabilities.setCapability(MobileCapabilityTypeEx.UDID, "33000a201bf1b35b");
+            desiredCapabilities.setCapability(MobileCapabilityTypeEx.UDID, udid);
+            desiredCapabilities.setCapability(MobileCapabilityTypeEx.SYSTEM_PORT, systemPort);
             desiredCapabilities.setCapability(MobileCapabilityTypeEx.APP_PACKAGE, "com.wdiodemoapp");
             desiredCapabilities.setCapability(MobileCapabilityTypeEx.APP_ACTIVITY, "com.wdiodemoapp.MainActivity");
 

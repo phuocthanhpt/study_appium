@@ -22,9 +22,9 @@ public class BaseTest {
     }
 
     protected AppiumDriver<MobileElement> getAndroidDriver(){
-        if(appiumDriver== null){
-            appiumDriver = driverFactoryEx.getAndroidDriver();
-        }
+//        if(appiumDriver== null){
+//            appiumDriver = driverFactoryEx.getAndroidDriver();
+//        }
         return appiumDriver;
     }
 }

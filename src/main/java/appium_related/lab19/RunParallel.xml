@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="tests" thread-count="10">
+    <test name="test1" enabled="true" parallel="tests" thread-count="2">
+        <parameter name="udid" value="33000a201bf1b35b"/>
+        <parameter name="systemPort" value="8300"/>
+        <classes>
+            <class name="appium_related.lab19.TestRunParallel"/>
+        </classes>
+    </test>
+    <test name="test2" enabled="true" parallel="tests" thread-count="2">
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="systemPort" value="8400"/>
+        <classes>
+            <class name="appium_related.lab19.TestRunParallel2"/>
+        </classes>
+    </test>
+
+</suite>
