@@ -1,0 +1,51 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Regression",
+    "children" : [ {
+      "name" : "test1",
+      "children" : [ {
+        "name" : "appium_related.lab19.TestRunParallel",
+        "children" : [ {
+          "name" : "test1",
+          "uid" : "37bbda0b6626a224",
+          "parentUid" : "d683428dc41027854d0ec8a85c5dd425",
+          "status" : "failed",
+          "time" : {
+            "start" : 1642347085781,
+            "stop" : 1642347085800,
+            "duration" : 19
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "8300", "33000a201bf1b35b" ]
+        }, {
+          "name" : "afterMethod",
+          "uid" : "3e4984ada2a0af52",
+          "parentUid" : "d683428dc41027854d0ec8a85c5dd425",
+          "status" : "broken",
+          "time" : {
+            "start" : 1642347085982,
+            "stop" : 1642347085983,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "8300", "33000a201bf1b35b" ]
+        } ],
+        "uid" : "d683428dc41027854d0ec8a85c5dd425"
+      } ],
+      "uid" : "5c21942971855782e01d1649f394ae1f"
+    } ],
+    "uid" : "5ba398ba8a4e16d50ebb84d8f641e8da"
+  } ]
+}

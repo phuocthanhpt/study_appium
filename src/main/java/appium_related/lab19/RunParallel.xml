@@ -8,12 +8,13 @@
             <class name="appium_related.lab19.TestRunParallel"/>
         </classes>
     </test>
-    <test name="test2" enabled="true" parallel="tests" thread-count="2">
+    <test name="test2" enabled="false" parallel="tests" thread-count="2">
         <parameter name="udid" value="emulator-5554"/>
         <parameter name="systemPort" value="8400"/>
         <classes>
             <class name="appium_related.lab19.TestRunParallel2"/>
         </classes>
     </test>
+
 
 </suite>

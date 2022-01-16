@@ -1,0 +1,42 @@
+{
+  "47bcc34e7ad71da0baba1d4dd6289467" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "37bbda0b6626a224",
+      "status" : "failed",
+      "statusDetails" : "1642347085783",
+      "time" : {
+        "start" : 1642347085781,
+        "stop" : 1642347085800,
+        "duration" : 19
+      }
+    } ]
+  },
+  "e3b0112c2ae32d8d95bcc4ed28a45f74" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e4984ada2a0af52",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1642347085982,
+        "stop" : 1642347085983,
+        "duration" : 1
+      }
+    } ]
+  }
+}

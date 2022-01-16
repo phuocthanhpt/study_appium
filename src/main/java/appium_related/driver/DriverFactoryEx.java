@@ -20,6 +20,10 @@ public class DriverFactoryEx {
         return appiumDriver;
     }
 
+    public AppiumDriver<MobileElement> getAndroidDriver() {
+        return appiumDriver;
+    }
+
     private void initDriver(String udid, String systemPort) {
         try {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();

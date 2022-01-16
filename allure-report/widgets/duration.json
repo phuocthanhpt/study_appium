@@ -1,0 +1,21 @@
+[ {
+  "uid" : "3e4984ada2a0af52",
+  "name" : "afterMethod",
+  "time" : {
+    "start" : 1642347085982,
+    "stop" : 1642347085983,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "37bbda0b6626a224",
+  "name" : "test1",
+  "time" : {
+    "start" : 1642347085781,
+    "stop" : 1642347085800,
+    "duration" : 19
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

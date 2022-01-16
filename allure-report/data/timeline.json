@@ -1,0 +1,47 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "thanhmaiphuocs-MacBook-Pro.local",
+    "children" : [ {
+      "name" : "3263@thanhmaiphuocs-MacBook-Pro.local.TestNG-tests-1(15)",
+      "children" : [ {
+        "name" : "afterMethod",
+        "uid" : "3e4984ada2a0af52",
+        "parentUid" : "04f5a1866667732f88f1a6d709dd92bf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642347085982,
+          "stop" : 1642347085983,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "8300", "33000a201bf1b35b" ]
+      }, {
+        "name" : "test1",
+        "uid" : "37bbda0b6626a224",
+        "parentUid" : "04f5a1866667732f88f1a6d709dd92bf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642347085781,
+          "stop" : 1642347085800,
+          "duration" : 19
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "8300", "33000a201bf1b35b" ]
+      } ],
+      "uid" : "04f5a1866667732f88f1a6d709dd92bf"
+    } ],
+    "uid" : "ad7e07907361beb1386e5b9f9464906b"
+  } ]
+}
