@@ -34,7 +34,8 @@ public class DriverFactoryEx {
             desiredCapabilities.setCapability(MobileCapabilityTypeEx.APP_PACKAGE, "com.wdiodemoapp");
             desiredCapabilities.setCapability(MobileCapabilityTypeEx.APP_ACTIVITY, "com.wdiodemoapp.MainActivity");
 
-            URL appiumServer = new URL("http://127.0.0.1:4723/wd/hub");
+//            URL appiumServer = new URL("http://127.0.0.1:4723/wd/hub");
+            URL appiumServer = new URL("http://192.168.2.57:4444/wd/hub");
             appiumDriver = new AndroidDriver<>(appiumServer, desiredCapabilities);
             appiumDriver.manage().timeouts().implicitlyWait(5L, TimeUnit.SECONDS);
 

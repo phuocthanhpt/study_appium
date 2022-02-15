@@ -25,6 +25,7 @@ public class BaseTest {
 //        if(appiumDriver== null){
 //            appiumDriver = driverFactoryEx.getAndroidDriver();
 //        }
+
         return appiumDriver;
     }
 }

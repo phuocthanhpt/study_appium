@@ -9,7 +9,7 @@ public class TestRunParallel extends BaseTestParallel{
 
     @Test
     public void test1(){
-//        getAndroidDriver();
-        Assert.fail(String.valueOf(new Date().getTime()));
+        getAndroidDriver();
+//        Assert.fail(String.valueOf(new Date().getTime()));
     }
 }
